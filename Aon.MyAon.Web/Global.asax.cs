@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using StackExchange.Profiling;
 
 namespace Aon.MyAon.Web
 {
@@ -22,6 +23,25 @@ namespace Aon.MyAon.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            // Clears all previously registered view engines.
+            ViewEngines.Engines.Clear();
+
+            // Registers our Razor C# specific view engine.
+            // This can also be registered using dependency injection through the new IDependencyResolver interface.
+            ViewEngines.Engines.Add(new RazorViewEngine());
+        }
+        protected void Application_BeginRequest()
+        {
+            if (Request.IsLocal)
+            {
+                MiniProfiler.Start();
+            }
+        }
+
+        protected void Application_EndRequest()
+        {
+            MiniProfiler.Stop();
         }
     }
 }

@@ -5,9 +5,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aon.MyAon.Web", "Aon.MyAon.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aon.MyAon.Web.Tests", "Aon.MyAon.Web.Tests\Aon.MyAon.Web.Tests.csproj", "{E148C7BF-E45C-4CD4-AE42-147EDA112D90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aon.MyAon.Common", "An.MyAon.Common\Aon.MyAon.Common.csproj", "{A8817BD8-8D5E-4057-BE43-3E68E61E156D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aon.MyAon.IntegrationTests", "Aon.MyAon.IntegrationTests\Aon.MyAon.IntegrationTests.csproj", "{3365A262-A79C-4FCF-B11A-9DA81784CC0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aon.MyAon.Persistence", "Aon.MyAon.Persistence\Aon.MyAon.Persistence.csproj", "{32C0CD41-12F9-4DE7-8ED5-5E8B58827B98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aon.MyAon.UnitTests", "Aon.MyAon.UnitTests\Aon.MyAon.UnitTests.csproj", "{D51D675A-2F04-43E7-926C-06126515F0D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aon.MyAon.IoC", "Aon.MyAon.IoC\Aon.MyAon.IoC.csproj", "{72AF3075-4EEA-49CD-ADB3-D5B8ED2587AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B4077F5D-2CD4-4024-8AEE-4C03BDB29ED7}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
+		SccNumberOfProjects = 8
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://dmahanta.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
@@ -17,6 +34,21 @@ Global
 		SccProjectUniqueName2 = Aon.MyAon.Web\\Aon.MyAon.Web.csproj
 		SccProjectName2 = Aon.MyAon.Web
 		SccLocalPath2 = Aon.MyAon.Web
+		SccProjectUniqueName3 = Aon.MyAon.IntegrationTests\\Aon.MyAon.IntegrationTests.csproj
+		SccProjectName3 = Aon.MyAon.IntegrationTests
+		SccLocalPath3 = Aon.MyAon.IntegrationTests
+		SccProjectUniqueName4 = Aon.MyAon.Persistence\\Aon.MyAon.Persistence.csproj
+		SccProjectName4 = Aon.MyAon.Persistence
+		SccLocalPath4 = Aon.MyAon.Persistence
+		SccProjectUniqueName5 = Aon.MyAon.UnitTests\\Aon.MyAon.UnitTests.csproj
+		SccProjectName5 = Aon.MyAon.UnitTests
+		SccLocalPath5 = Aon.MyAon.UnitTests
+		SccProjectUniqueName6 = An.MyAon.Common\\Aon.MyAon.Common.csproj
+		SccProjectName6 = An.MyAon.Common
+		SccLocalPath6 = An.MyAon.Common
+		SccProjectUniqueName7 = Aon.MyAon.IoC\\Aon.MyAon.IoC.csproj
+		SccProjectName7 = Aon.MyAon.IoC
+		SccLocalPath7 = Aon.MyAon.IoC
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +63,26 @@ Global
 		{E148C7BF-E45C-4CD4-AE42-147EDA112D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E148C7BF-E45C-4CD4-AE42-147EDA112D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E148C7BF-E45C-4CD4-AE42-147EDA112D90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8817BD8-8D5E-4057-BE43-3E68E61E156D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8817BD8-8D5E-4057-BE43-3E68E61E156D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8817BD8-8D5E-4057-BE43-3E68E61E156D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8817BD8-8D5E-4057-BE43-3E68E61E156D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3365A262-A79C-4FCF-B11A-9DA81784CC0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3365A262-A79C-4FCF-B11A-9DA81784CC0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3365A262-A79C-4FCF-B11A-9DA81784CC0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3365A262-A79C-4FCF-B11A-9DA81784CC0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32C0CD41-12F9-4DE7-8ED5-5E8B58827B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32C0CD41-12F9-4DE7-8ED5-5E8B58827B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32C0CD41-12F9-4DE7-8ED5-5E8B58827B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32C0CD41-12F9-4DE7-8ED5-5E8B58827B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D51D675A-2F04-43E7-926C-06126515F0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51D675A-2F04-43E7-926C-06126515F0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51D675A-2F04-43E7-926C-06126515F0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51D675A-2F04-43E7-926C-06126515F0D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72AF3075-4EEA-49CD-ADB3-D5B8ED2587AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72AF3075-4EEA-49CD-ADB3-D5B8ED2587AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72AF3075-4EEA-49CD-ADB3-D5B8ED2587AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72AF3075-4EEA-49CD-ADB3-D5B8ED2587AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
